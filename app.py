@@ -495,6 +495,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, buttons_template)
     elif text == '/media':
         buttons_template = TemplateSendMessage(
+            thumbnail_image_url= 'https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
             alt_text='Media message',
             template=ButtonsTemplate(
                 title='[ MEDIA MESSAGE ]',
@@ -519,6 +520,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, buttons_template)
     elif (text == '/media1') or (text == 'media1') or (text == 'Media1'):
         buttons_template = TemplateSendMessage(
+            thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
             alt_text='Media area',
             template=ButtonsTemplate(
                 title='MEDIA COMMAND',
@@ -550,6 +552,7 @@ def handle_message(event):
         
     elif (text == '/media2') or (text == 'Media2') or (text == 'media2'):
         buttons_template = TemplateSendMessage(
+            thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
             alt_text='media area',
             template=ButtonsTemplate(
                 title='MEDIA COMMAND',
@@ -581,6 +584,7 @@ def handle_message(event):
 #=====[ CAROUSEL MESSAGE ]==========[ ARSYBAI ]======================
     elif text == '/musik':
         buttons_template = TemplateSendMessage(
+            thumbnail_image_url='https://i.postimg.cc/HLHqwnZy/Pics-Art-06-19-02-19-10.jpg'
             alt_text='Enjoy whit music',
             template=ButtonsTemplate(
                 title='[ GENDRE MUSIC ]',
@@ -606,6 +610,7 @@ def handle_message(event):
 
     elif text == '/listtoken':
         message = TemplateSendMessage(
+            thumbnail_image_url= 'https://i.postimg.cc/vmZsRDrd/Pics-Art-06-19-02-20-23.jpg'
             alt_text='Token area',
             template=CarouselTemplate(
                 columns=[
@@ -658,6 +663,7 @@ def handle_message(event):
 #=====[ CAROUSEL MESSAGE ]==========[ ARSYBAI ]======================
     elif (text == '/creator') or (text == 'About'):
         message = TemplateSendMessage(
+            thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg'
             alt_text='>My creator<',
             template=CarouselTemplate(
                 columns=[
