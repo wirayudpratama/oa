@@ -468,6 +468,7 @@ def handle_message(event):
         buttons_template = TemplateSendMessage(
             alt_text='Help message',
             template=ButtonsTemplate(
+                thumbnail_image_url = 'https://i.postimg.cc/TwzLL2ps/Pics-Art-06-19-01-11-21.jpg',
                 title='[ HELP MESSAGE ]',
                 text= 'Tap the Button',
                 actions=[
