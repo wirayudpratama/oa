@@ -497,7 +497,7 @@ def handle_message(event):
         buttons_template = TemplateSendMessage(
             alt_text='Media message',
             template=ButtonsTemplate(
-                thumbnail_image_url= 'https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
+                thumbnail_image_url= 'https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg',
                 title='[ MEDIA MESSAGE ]',
                 text= '>Tap the Button<',
                 actions=[
@@ -522,7 +522,7 @@ def handle_message(event):
         buttons_template = TemplateSendMessage(
             alt_text='Media area',
             template=ButtonsTemplate(
-                thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
+                thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg',
                 title='MEDIA COMMAND',
                 text= '>Tap the Button<',
                 weight= "bold",
@@ -554,7 +554,7 @@ def handle_message(event):
         buttons_template = TemplateSendMessage(
             alt_text='media area',
             template=ButtonsTemplate(
-                thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
+                thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg',
                 title='MEDIA COMMAND',
                 text= '>Tap the Button<',
                 weight= "bold",
@@ -586,7 +586,7 @@ def handle_message(event):
         buttons_template = TemplateSendMessage(
             alt_text='Enjoy whit music',
             template=ButtonsTemplate(
-                thumbnail_image_url='https://i.postimg.cc/HLHqwnZy/Pics-Art-06-19-02-19-10.jpg'
+                thumbnail_image_url='https://i.postimg.cc/HLHqwnZy/Pics-Art-06-19-02-19-10.jpg',
                 title='[ GENDRE MUSIC ]',
                 text= '>Tap the Button<',
                 actions=[
