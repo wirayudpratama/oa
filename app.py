@@ -610,11 +610,11 @@ def handle_message(event):
 
     elif text == '/listtoken':
         message = TemplateSendMessage(
-            #thumbnail_image_url= 'https://i.postimg.cc/vmZsRDrd/Pics-Art-06-19-02-20-23.jpg'
             alt_text='Token area',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/vmZsRDrd/Pics-Art-06-19-02-20-23.jpg',
                         title='> LIST TOKEN <',
                         text='yudarea',
                         actions=[
@@ -629,6 +629,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/vmZsRDrd/Pics-Art-06-19-02-20-23.jpg',
                         title='> LIST TOKEN <',
                         text='yudarea',
                         actions=[
@@ -643,6 +644,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/vmZsRDrd/Pics-Art-06-19-02-20-23.jpg',
                         title='> LIST TOKEN <',
                         text='yudarea',
                         actions=[
@@ -663,11 +665,11 @@ def handle_message(event):
 #=====[ CAROUSEL MESSAGE ]==========[ ARSYBAI ]======================
     elif (text == '/creator') or (text == 'About'):
         message = TemplateSendMessage(
-            #thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg'
             alt_text='>My creator<',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
                         title='Creator-PC',
                         text='This is my creator',
                         actions=[
@@ -678,6 +680,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
                         title='Creator-OA',
                         text='This is my creator',
                         actions=[
@@ -688,6 +691,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
                         title='My web',
                         text='Hehe',
                         actions=[
