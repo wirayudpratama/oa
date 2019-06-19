@@ -610,7 +610,7 @@ def handle_message(event):
 
     elif text == '/listtoken':
         message = TemplateSendMessage(
-            thumbnail_image_url= 'https://i.postimg.cc/vmZsRDrd/Pics-Art-06-19-02-20-23.jpg'
+            #thumbnail_image_url= 'https://i.postimg.cc/vmZsRDrd/Pics-Art-06-19-02-20-23.jpg'
             alt_text='Token area',
             template=CarouselTemplate(
                 columns=[
@@ -663,7 +663,7 @@ def handle_message(event):
 #=====[ CAROUSEL MESSAGE ]==========[ ARSYBAI ]======================
     elif (text == '/creator') or (text == 'About'):
         message = TemplateSendMessage(
-            thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg'
+            #thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg'
             alt_text='>My creator<',
             template=CarouselTemplate(
                 columns=[
