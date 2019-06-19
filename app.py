@@ -520,9 +520,9 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, buttons_template)
     elif (text == '/media1') or (text == 'media1') or (text == 'Media1'):
         buttons_template = TemplateSendMessage(
-            thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
             alt_text='Media area',
             template=ButtonsTemplate(
+                thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
                 title='MEDIA COMMAND',
                 text= '>Tap the Button<',
                 weight= "bold",
@@ -552,9 +552,9 @@ def handle_message(event):
         
     elif (text == '/media2') or (text == 'Media2') or (text == 'media2'):
         buttons_template = TemplateSendMessage(
-            thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
             alt_text='media area',
             template=ButtonsTemplate(
+                thumbnail_image_url='https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
                 title='MEDIA COMMAND',
                 text= '>Tap the Button<',
                 weight= "bold",
@@ -584,9 +584,9 @@ def handle_message(event):
 #=====[ CAROUSEL MESSAGE ]==========[ ARSYBAI ]======================
     elif text == '/musik':
         buttons_template = TemplateSendMessage(
-            thumbnail_image_url='https://i.postimg.cc/HLHqwnZy/Pics-Art-06-19-02-19-10.jpg'
             alt_text='Enjoy whit music',
             template=ButtonsTemplate(
+                thumbnail_image_url='https://i.postimg.cc/HLHqwnZy/Pics-Art-06-19-02-19-10.jpg'
                 title='[ GENDRE MUSIC ]',
                 text= '>Tap the Button<',
                 actions=[
