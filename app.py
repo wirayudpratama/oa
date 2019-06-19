@@ -662,7 +662,6 @@ def handle_message(event):
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
-                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg'
                         title='Creator-PC',
                         text='This is my creator',
                         actions=[
@@ -673,7 +672,6 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg'
                         title='Creator-OA',
                         text='This is my creator',
                         actions=[
@@ -684,7 +682,6 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg'
                         title='My web',
                         text='Hehe',
                         actions=[
