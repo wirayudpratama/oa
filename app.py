@@ -495,9 +495,9 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, buttons_template)
     elif text == '/media':
         buttons_template = TemplateSendMessage(
-            thumbnail_image_url= 'https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
             alt_text='Media message',
             template=ButtonsTemplate(
+                thumbnail_image_url= 'https://i.postimg.cc/dVvFB5D3/Pics-Art-06-19-02-19-41.jpg'
                 title='[ MEDIA MESSAGE ]',
                 text= '>Tap the Button<',
                 actions=[
