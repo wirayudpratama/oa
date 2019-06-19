@@ -467,7 +467,7 @@ def handle_message(event):
     elif (text == '/help') or (text == 'help') or (text == 'Help'):
         buttons_template = TemplateSendMessage(
             alt_text='Help message',
-            template=ButtonsTemplate
+            template=ButtonsTemplate(
                 thumbnail_image_url= 'https://i.postimg.cc/MpBQwQHQ/Pics-Art-06-19-01-26-01.jpg',
                 title='[ HELP MESSAGE ]',
                 text= 'Tap the Button',
