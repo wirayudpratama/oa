@@ -112,21 +112,6 @@ def handle_message(event):
             line_bot_api.reply_message(
                 event.reply_token,
                 TextSendMessage(text="Bot can't leave from 1:1 chat"))
-#======[ TES MESSAGE ]=============[ ARSYBAI ]======================
-    if text == "redtube on":
-    	angka = random.randint(1, 200)
-    	r = requests.get('https://api.boteater.co/redtube?page={}'.format(angka))
-    	data=r.text
-    	data=json.loads(data)
-    	for anu in data["result"]:
-        	line_bot_api.reply_message(event.reply_token,VideoSendMessage(original_content_url=anu["dl"], preview_image_url=anu["img"]))
-    elif text == "xvideos on":
-    	angka = random.randint(1, 200)
-    	r = requests.get('https://api.boteater.co/xvideos?page={}'.format(angka))
-    	data=r.text
-    	data=json.loads(data)
-    	for anu in data["result"]:
-    		line_bot_api.reply_message(event.reply_token,VideoSendMessage(original_content_url=anu["dl"], preview_image_url=anu["img"]))
 #=====[ TES MESSAGE ]=============[ ARSYBAI ]======================
     elif text == 'confirm':
         confirm_template = ConfirmTemplate(text='Bot nya bagus?', actions=[
@@ -534,11 +519,11 @@ def handle_message(event):
                     ),
                     MessageTemplateAction(
                         label='Download Smule',
-                        text='≽ Use:\n• /smuleaudio:<Link>\n• /smulevideo:<Link>'
+                        text='≽ Use:\n• /smuleaudio: <Link>\n• /smulevideo: <Link>'
                     ),
                     MessageTemplateAction(
                         label='Translate',
-                        text='≽ Use:\n• /tr-id:<text>\n• /tr-en:<text>\n• /tr-th:<text>'
+                        text='≽ Use:\n• /tr-id: <text>\n• /tr-en: <text>\n• /tr-th: <text>'
                     ),
                     MessageTemplateAction(
                         label='Info Bmkg',
@@ -562,7 +547,7 @@ def handle_message(event):
                 actions=[
                     MessageTemplateAction(
                         label='Image Text',
-                        text='≽ Use:\n• /fs1:<Text>\n• /fs1:<Text>\n• /graffiti:<text>\n• /light:<text>\n• /street:<text>\n• /cookies:<text>\n• /sletters:<text>'
+                        text='≽ Use:\n• /fs1: <Text>\n• /fs1: <Text>\n• /graffiti: <text>\n• /light: <text>\n• /street: <text>\n• /cookies: <text>\n• /sletters: <text>'
                     ),
                     MessageTemplateAction(
                         label='Zodiac',
@@ -574,7 +559,7 @@ def handle_message(event):
                     ),
                     MessageTemplateAction(
                         label='Checking',
-                        text='≽ Use:\n• /audio:<link>\n• /video:<link>\n• /image:<link>'
+                        text='≽ Use:\n• /audio: <link>\n• /video: <link>\n• /image: <link>'
                     )
                 ]
             )
