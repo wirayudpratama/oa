@@ -57,7 +57,7 @@ def handle_join(event):
     line_bot_api.reply_message(
         event.reply_token,[
                 TextSendMessage(text='Type Help for command :D'),
-                TextSendMessage(text='https://secreto.site/id/4462337')
+                TextSendMessage(text='yudhaa.herokuapp.com')
         ])
 
 @handler.add(MessageEvent, message=TextMessage)
@@ -98,14 +98,14 @@ def handle_message(event):
             line_bot_api.reply_message(
                 event.reply_token, [
                     TextSendMessage(text='Yudha pergi bye-bye'),
-                    TextSendMessage(text='https://secreto.site/id/4462337')
+                    TextSendMessage(text='yudhaa.herokuapp.com')
                 ])
             line_bot_api.leave_group(event.source.group_id)
         elif isinstance(event.source, SourceRoom):
             line_bot_api.reply_message(
                 event.reply_token, [
                     TextSendMessage(text='Yudha pergi bye-bye'),
-                    TextSendMessage(text='https://secreto.site/id/4462337')
+                    TextSendMessage(text='yudhaa.herokuapp.com')
                 ])
             line_bot_api.leave_room(event.source.room_id)
         else:
