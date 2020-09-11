@@ -691,13 +691,13 @@ def handle_message(event):
         )
         line_bot_api.reply_message(event.reply_token, message)
 
-    elif (text == '/Mkpop') or (text == 'About'):
+    elif (text == '/Mkpop') or (text == '/mkpop'):
         message = TemplateSendMessage(
             alt_text='>Musik Kpop<',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
-                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
+                        thumbnail_image_url= 'https://i.postimg.cc/LXH46bPH/Say-you-love-me-VKOOK-Chapter-2.jpg',
                         title='BTS',
                         text='Musik BTS',
                         actions=[
