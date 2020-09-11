@@ -740,17 +740,6 @@ def handle_message(event):
                             )
                         ]
                     ),
-                    CarouselColumn(
-                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
-                        title='Red velvet',
-                        text='Musik Red velvet',
-                        actions=[
-                            URITemplateAction(
-                                label='>Red velvet<',
-                                text='/Musik redvelvet'
-                            )
-                        ]
-                    ),
                 ]
             )
         )
