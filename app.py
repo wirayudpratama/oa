@@ -690,6 +690,72 @@ def handle_message(event):
             )
         )
         line_bot_api.reply_message(event.reply_token, message)
+
+    elif (text == '/Mkpop') or (text == 'About'):
+        message = TemplateSendMessage(
+            alt_text='>Musik Kpop<',
+            template=CarouselTemplate(
+                columns=[
+                    CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
+                        title='BTS',
+                        text='Musik BTS',
+                        actions=[
+                            URITemplateAction(
+                                label='>BTS<',
+                                text='/musik bts'
+                            )
+                        ]
+                    ),
+                    CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
+                        title='iKon',
+                        text='Musik iKon',
+                        actions=[
+                            URITemplateAction(
+                                label='>iKon<',
+                                text='/musik ikon'
+                            )
+                        ]
+                    ),
+                    CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
+                        title='NCT',
+                        text='Musik NCT',
+                        actions=[
+                            URITemplateAction(
+                                label='>NCT<',
+                                text='/Musik nct'
+                            )
+                        ]
+                    ),
+                    CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
+                        title='Blackpink',
+                        text='Musik Blackpink',
+                        actions=[
+                            URITemplateAction(
+                                label='>Blackpink<',
+                                text='/Musik blackpink'
+                            )
+                        ]
+                    ),
+                    CarouselColumn(
+                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
+                        title='Red velvet',
+                        text='Musik Red velvet',
+                        actions=[
+                            URITemplateAction(
+                                label='>Red velvet<',
+                                text='/Musik redvelvet'
+                            )
+                        ]
+                    ),
+                ]
+            )
+        )
+        line_bot_api.reply_message(event.reply_token, message)
+
     if event.message.text == "/app clone":
         buttons_template = TemplateSendMessage(
             alt_text='App clone',
