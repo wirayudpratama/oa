@@ -730,7 +730,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
+                        thumbnail_image_url= 'https://i.postimg.cc/7Y9JyST8/BL-KPI-K-I-YOUR-RE-BLINKs-YG-Blackpink-Rose-Jisso-Jennie-Lisa-kimjisso-lalisamanoban.jpg',
                         title='Blackpink',
                         text='Musik Blackpink',
                         actions=[
