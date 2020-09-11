@@ -701,7 +701,7 @@ def handle_message(event):
                         title='BTS',
                         text='Musik BTS',
                         actions=[
-                            URITemplateAction(
+                            MessageTemplateAction(
                                 label='>BTS<',
                                 text='/musik bts'
                             )
@@ -712,7 +712,7 @@ def handle_message(event):
                         title='iKon',
                         text='Musik iKon',
                         actions=[
-                            URITemplateAction(
+                            MessageTemplateAction(
                                 label='>iKon<',
                                 text='/musik ikon'
                             )
@@ -723,7 +723,7 @@ def handle_message(event):
                         title='NCT',
                         text='Musik NCT',
                         actions=[
-                            URITemplateAction(
+                            MessageTemplateAction(
                                 label='>NCT<',
                                 text='/Musik nct'
                             )
@@ -734,7 +734,7 @@ def handle_message(event):
                         title='Blackpink',
                         text='Musik Blackpink',
                         actions=[
-                            URITemplateAction(
+                            MessageTemplateAction(
                                 label='>Blackpink<',
                                 text='/Musik blackpink'
                             )
