@@ -708,7 +708,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url= 'https://i.postimg.cc/8zRTLqHj/Pics-Art-06-19-02-08-47.jpg',
+                        thumbnail_image_url= 'https://i.postimg.cc/3RYKtcrs/Fans-outraged-after-girl-kisses-i-KON-s-Yun-Hyeong.jpg',
                         title='iKon',
                         text='Musik iKon',
                         actions=[
