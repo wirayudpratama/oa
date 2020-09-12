@@ -693,7 +693,11 @@ def handle_message(event):
                         text='Musik BTS',
                         actions=[
                             MessageTemplateAction(
-                                label='>BTS<',
+                                label='>Fmv BTS<',
+                                text='/fmv bts'
+                            )
+                            MessageTemplateAction(
+                                label='>Music BTS<',
                                 text='/musik bts'
                             )
                         ]
