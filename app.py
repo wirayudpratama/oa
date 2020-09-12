@@ -342,29 +342,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, text_message)
         return 0
         
-    elif "/xvideos: " in event.message.text:
-        skss = event.message.text.replace('/xvideos: ', '')
-        url = requests.get("https://api.boteater.co/xvideos?page="+ skss)
-        data = url.json()
-        message = VideoSendMessage(
-        original_content_url=data["result"][0]["dl"],
-        preview_image_url='https://i.ibb.co/GFWPRCV/1545946474474.jpg'
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif (text == '/lokasi') or (text == 'Mylokasi'):
-        message = LocationSendMessage(
-        title='my location',
-        address='Gg. Tentrem, Pasuruhan Lor, Jati, Kabupaten Kudus, Jawa Tengah 59349, Indonesia',
-        latitude=-6.8172919,
-        longitude=110.8217371
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-    elif (text == '/bmkg') or (text == 'Bmkg'):
-        url = requests.get("https://api.tanyz.xyz/infoUpdateBMKG")
-        data = url.json()
-        message = TextSendMessage(text=data["Hasil"]["info"])
-        line_bot_api.reply_message(event.reply_token, message)
+
    
 #=============[ TOKEN ]=============[ ARSYBAI ]======================
     elif (text == '/chromeos') or (text == 'Chromeos'):
@@ -684,18 +662,14 @@ def handle_message(event):
 
     elif (text == '/Mkpop') or (text == '/mkpop'):
         message = TemplateSendMessage(
-            alt_text='>Musik Kpop<',
+            alt_text='>Music Kpop<',
             template=CarouselTemplate(
                 columns=[
                     CarouselColumn(
                         thumbnail_image_url= 'https://i.postimg.cc/LXH46bPH/Say-you-love-me-VKOOK-Chapter-2.jpg',
                         title='BTS',
-                        text='Musik BTS',
+                        text='Music BTS',
                         actions=[
-                            MessageTemplateAction(
-                                label='>Fmv BTS<',
-                                text='/fmv bts'
-                            )
                             MessageTemplateAction(
                                 label='>Music BTS<',
                                 text='/musik bts'
@@ -705,7 +679,7 @@ def handle_message(event):
                     CarouselColumn(
                         thumbnail_image_url= 'https://i.postimg.cc/3RYKtcrs/Fans-outraged-after-girl-kisses-i-KON-s-Yun-Hyeong.jpg',
                         title='iKon',
-                        text='Musik iKon',
+                        text='Music iKon',
                         actions=[
                             MessageTemplateAction(
                                 label='>iKon<',
@@ -716,7 +690,7 @@ def handle_message(event):
                     CarouselColumn(
                         thumbnail_image_url= 'https://i.postimg.cc/FRpJpcvx/Q-nrnana-Instagram-photos-and-videos.png',
                         title='NCT',
-                        text='Musik NCT',
+                        text='Music NCT',
                         actions=[
                             MessageTemplateAction(
                                 label='>NCT<',
@@ -727,7 +701,7 @@ def handle_message(event):
                     CarouselColumn(
                         thumbnail_image_url= 'https://i.postimg.cc/7Y9JyST8/BL-KPI-K-I-YOUR-RE-BLINKs-YG-Blackpink-Rose-Jisso-Jennie-Lisa-kimjisso-lalisamanoban.jpg',
                         title='Blackpink',
-                        text='Musik Blackpink',
+                        text='Music Blackpink',
                         actions=[
                             MessageTemplateAction(
                                 label='>Blackpink<',
