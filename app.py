@@ -343,7 +343,7 @@ def handle_message(event):
         return 0
         
     if text == '/tiktok':
-        url = requests.get("https://rest.farzain.com/api/tiktok.php?country=jp&apikey=3w92e8nR5eWuDWQShRlh6C1ye&type=json")
+        url = requests.get("https://api.be-team.me/tiktok?url="+url,headers=headers).text)
         data = url.json()
         message = VideoSendMessage(
         original_content_url=data["first_video"],
