@@ -249,7 +249,7 @@ def handle_message(event):
                         text='/media'
                     ),
                     MessageTemplateAction(
-                        label='Musik',
+                        label='Music',
                         text='/musik'
                     ),
                     MessageTemplateAction(
@@ -485,7 +485,7 @@ def handle_message(event):
                         text='Music BTS',
                         actions=[
                             MessageTemplateAction(
-                                label='>Music BTS<',
+                                label='>BTS<',
                                 text='/musik bts'
                             )
                         ]
