@@ -485,10 +485,6 @@ def handle_message(event):
                         text='Music BTS',
                         actions=[
                             MessageTemplateAction(
-                                label='>MV BTS<',
-                                text='/mv bts'
-                            ),
-                            MessageTemplateAction(
                                 label='>Music BTS<',
                                 text='/musik bts'
                             )
