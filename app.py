@@ -342,15 +342,6 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, text_message)
         return 0
         
-    if text == '/tiktok':
-        url = requests.get("https://api.be-team.me/tiktok?url="+url,headers=headers).text)
-        data = url.json()
-        message = VideoSendMessage(
-        original_content_url=data["first_video"],
-        preview_image_url='https://i.ibb.co/GFWPRCV/1545946474474.jpg'
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
     elif "/xvideos: " in event.message.text:
         skss = event.message.text.replace('/xvideos: ', '')
         url = requests.get("https://api.boteater.co/xvideos?page="+ skss)
