@@ -127,79 +127,6 @@ def handle_message(event):
         text_message = TextSendMessage(text=sasa)
         line_bot_api.reply_message(event.reply_token, text_message)
         return 0
-    elif "/artinama: " in event.message.text:
-        skss = event.message.text.replace('/artinama: ', '')
-        url = requests.get("https://rest.farzain.com/api/nama.php?&apikey=3w92e8nR5eWuDWQShRlh6C1ye&q="+ skss)
-        data = url.json()
-        text_message = TextSendMessage(text=data["result"])
-        line_bot_api.reply_message(event.reply_token, text_message)
-        return 0
-    elif "/zodiac: " in event.message.text:
-        skss = event.message.text.replace('/zodiac: ', '')
-        url = requests.get("https://triopekokbots026.herokuapp.com/zodiak="+ skss)
-        data = url.json()
-        text_message = TextSendMessage(text=data["result"])
-        line_bot_api.reply_message(event.reply_token, text_message)
-        return 0
-    elif "/tr-th: " in event.message.text:
-        skss = event.message.text.replace('/tr-th: ', '')
-        url = requests.get("https://api.tanyz.xyz/translateText/?&to=th&text="+ skss)
-        data = url.json()
-        text_message = TextSendMessage(text=data["Hasil"])
-        line_bot_api.reply_message(event.reply_token, text_message)
-        return 0
-    elif "/tr-en: " in event.message.text:
-        skss = event.message.text.replace('/tr-en: ', '')
-        url = requests.get("https://api.tanyz.xyz/translateText/?&to=en&text="+ skss)
-        data = url.json()
-        text_message = TextSendMessage(text=data["Hasil"])
-        line_bot_api.reply_message(event.reply_token, text_message)
-        return 0
-    elif "/tr-id: " in event.message.text:
-        skss = event.message.text.replace('/tr-id: ', '')
-        url = requests.get("https://api.tanyz.xyz/translateText/?&to=id&text="+ skss)
-        data = url.json()
-        text_message = TextSendMessage(text=data["Hasil"])
-        line_bot_api.reply_message(event.reply_token, text_message)
-        return 0
-    elif "/acaratv: " in event.message.text:
-        skss = event.message.text.replace('/acaratv: ', '')
-        url = requests.get("https://rest.farzain.com/api/acaratv.php?&apikey=3w92e8nR5eWuDWQShRlh6C1ye&id="+ skss)
-        data = url.json()
-        text_message = TextSendMessage(text=data["result"])
-        line_bot_api.reply_message(event.reply_token, text_message)
-        return 0
-    elif "/shorturl: " in event.message.text:
-        skss = event.message.text.replace('/shorturl: ', '')
-        url = requests.get("https://rest.farzain.com/api/url.php?&apikey=3w92e8nR5eWuDWQShRlh6C1ye&id="+ skss)
-        data = url.json()
-        text_message = TextSendMessage(text=data["url"])
-        line_bot_api.reply_message(event.reply_token, text_message)
-        return 0
-    elif "/fs1: " in event.message.text:
-        skss = event.message.text.replace('/fs1: ', '')
-        message = ImageSendMessage(
-        original_content_url='https://rest.farzain.com/api/special/fansign/indo/viloid.php?apikey=rambu&text=' + skss,
-        preview_image_url='https://rest.farzain.com/api/special/fansign/indo/viloid.php?apikey=rambu&text=' + skss
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/fs2: " in event.message.text:
-        skss = event.message.text.replace('/fs2: ', '')
-        message = ImageSendMessage(
-        original_content_url='https://rest.farzain.com/api/special/fansign/cosplay/cosplay.php?apikey=rambu&text=' + skss,
-        preview_image_url='https://rest.farzain.com/api/special/fansign/cosplay/cosplay.php?apikey=rambu&text=' + skss
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/graffiti: " in event.message.text:
-        skss = event.message.text.replace('/graffiti: ', '')
-        message = ImageSendMessage(
-        original_content_url='https://rest.farzain.com/api/photofunia/graffiti_wall.php?&apikey=3w92e8nR5eWuDWQShRlh6C1ye&text2=Gans&text1=' + skss,
-        preview_image_url='https://rest.farzain.com/api/photofunia/graffiti_wall.php?&apikey=3w92e8nR5eWuDWQShRlh6C1ye&text2=Gans&text1=' + skss
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
     elif "/audio: " in event.message.text:
         skss = event.message.text.replace('/audio: ', '')
         message = AudioSendMessage(
@@ -224,117 +151,6 @@ def handle_message(event):
         )
         line_bot_api.reply_message(event.reply_token, message)
         return 0
-    elif "/linepost: " in event.message.text:
-        skss = event.message.text.replace('/linepost: ', '')
-        url = requests.get("https://rest.farzain.com/api/special/line.php?&apikey=vhbotsline&id="+ skss)
-        data = url.json()
-        message = VideoSendMessage(
-        original_content_url=data["result"],
-        preview_image_url='https://i.ibb.co/GFWPRCV/1545946474474.jpg'
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/youtubemp4: " in event.message.text:
-        skss = event.message.text.replace('/youtubemp4: ', '')
-        url = requests.get("https://api.tanyz.xyz/api/ytDown/?link="+ skss)
-        data = url.json()
-        message = VideoSendMessage(
-        original_content_url=data["Hasil"]["urls"][0]["id"],
-        preview_image_url='https://i.ibb.co/GFWPRCV/1545946474474.jpg'
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/youtubemp3: " in event.message.text:
-        skss = event.message.text.replace('/youtubemp3: ', '')
-        url = requests.get("https://rest.farzain.com/api/ytaudio.php?&apikey=rambu&id="+ skss)
-        data = url.json()
-        message = AudioSendMessage(
-        original_content_url=data["result"]["webm"],
-        duration=60000
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/smulevideo: " in event.message.text:
-        skss = event.message.text.replace('/smulevideo: ', '')
-        url = requests.get("https://api.eater.pw/smule?url="+ skss)
-        data = url.json()
-        message = VideoSendMessage(
-        original_content_url=data["result"][0]["video"],
-        preview_image_url=data["result"][0]["thumb"]
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/smuleaudio: " in event.message.text:
-        skss = event.message.text.replace('/smuleaudio: ', '')
-        url = requests.get("https://api.eater.pw/smule?url="+ skss)
-        data = url.json()
-        message = AudioSendMessage(
-        original_content_url=data["result"][0]["video"],
-        duration=60000
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/music: " in event.message.text:
-        skss = event.message.text.replace('/music: ', '')
-        url = requests.get("http://api.zicor.ooo/joox.php?song="+ skss)
-        data = url.json()
-        message = AudioSendMessage(
-        original_content_url=data["url"],
-        duration=240000
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/light: " in event.message.text:
-        skss = event.message.text.replace('/light: ', '')
-        url = requests.get("http://api.zicor.ooo/graffiti.php?text="+ skss)
-        data = url.json()
-        message = ImageSendMessage(
-        original_content_url=data["image"],
-        preview_image_url=data["image"]
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/street: " in event.message.text:
-        skss = event.message.text.replace('/street: ', '')
-        url = requests.get("http://api.zicor.ooo/streets.php?text="+ skss)
-        data = url.json()
-        message = ImageSendMessage(
-        original_content_url=data["image"],
-        preview_image_url=data["image"]
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/cookies: " in event.message.text:
-        skss = event.message.text.replace('/cookies: ', '')
-        url = requests.get("http://api.zicor.ooo/wcookies.php?text="+ skss)
-        data = url.json()
-        message = ImageSendMessage(
-        original_content_url=data["image"],
-        preview_image_url=data["image"]
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/sletters: " in event.message.text:
-        skss = event.message.text.replace('/sletters: ', '')
-        url = requests.get("http://api.zicor.ooo/sletters.php?text="+ skss)
-        data = url.json()
-        message = ImageSendMessage(
-        original_content_url=data["image"],
-        preview_image_url=data["image"]
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-    elif "/goimage: " in event.message.text:
-        skss = event.message.text.replace('/goimage: ', '')
-        url = requests.get("https://api.eater.pw/googleimg?search="+ skss)
-        data = url.json()
-        message = ImageSendMessage(
-        original_content_url=data["result"][0]["img"],
-        preview_image_url=data["result"][0]["img"]
-        )
-        line_bot_api.reply_message(event.reply_token, message)
-        return 0
-
     elif "/apakah " in event.message.text:
         quo = ('Iya','Tidak','Gak tau','Bisa jadi','Mungkin iya','Mungkin tidak')
         jwb = random.choice(quo)
@@ -342,8 +158,6 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, text_message)
         return 0
         
-
-   
 #=============[ TOKEN ]=============[ ARSYBAI ]======================
     elif (text == '/chromeos') or (text == 'Chromeos'):
         url = requests.get("https://api.eater.pw/token?header=CHROMEOS")
