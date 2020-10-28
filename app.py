@@ -502,7 +502,7 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn(
-                        thumbnail_image_url= 'https://i.postimg.cc/FRpJpcvx/Q-nrnana-Instagram-photos-and-videos.png',
+                        thumbnail_image_url= 'https://i.postimg.cc/tT29WHhb/NCT-2020-Wallpaper.jpg',
                         title='NCT',
                         text='Music NCT',
                         actions=[
